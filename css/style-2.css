@@ -1,0 +1,423 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: rgba(15, 27, 79, 1);
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    background: rgba(0, 0, 0, 0.445);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.header__container {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    align-items: center;
+}
+
+.nav__header {}
+
+.menu__header {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.link__header {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.link__header:hover {
+    border-bottom: 1px solid white;
+}
+
+/* выпадающее меню */
+
+.nav__bg {
+    display: none;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.568);
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 1;
+    box-shadow: 0px 0px 11px 8px rgb(21 19 137 / 77%);
+}
+
+.submenu li {
+    margin-bottom: 5px;
+}
+
+.submenu a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.submenu a:hover {
+    border-bottom: none;
+    color: rgb(0, 0, 0);
+}
+
+
+
+.s1 {
+    margin: 50px 0;
+}
+
+.mess {
+    display: flex;
+    justify-content: center;
+}
+
+.messedger {
+
+    box-shadow: 1px 1px 20px 3px #020affeb;
+}
+
+.c-r {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.left {
+    max-width: 1700px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.left__nav {
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.text__left {
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    font-weight: 300;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 1000px;
+    background-color: rgb(10, 9, 75);
+}
+
+
+.chats {
+    padding: 30px 0;
+}
+
+.poisc {
+    width: 259px;
+    height: 35px;
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 17px;
+    border: none;
+    color: white;
+    padding:  0 10px;
+}
+
+
+.chat-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin: 10px 0;
+    width: 300px;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 17px;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.chat-1:hover {
+    background: rgba(53, 53, 53, 0.55);
+}
+
+.chat-1.active {
+    background: rgba(53, 53, 53, 0.55);
+}
+
+
+.img__ava {
+    width: 70px;
+}
+
+.right {
+    width: 1300px;
+   /* height: 1000px;  */
+    background-color: rgb(3 9 51);
+}
+.right {
+    display: none;
+}
+
+.right.active {
+    display: block;
+}
+
+.frd {
+display: flex;
+background: rgb(100 19 203);
+width: 100%;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.img__call {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+.name__frd {
+display: flex;
+flex-direction: column;
+color: white;
+cursor: pointer;
+padding: 0 20px;
+}
+
+.sms {
+    margin: 30px 15px;
+}
+
+.sms__you {
+   
+   
+}
+
+.text__you {
+    display: inline-block;
+    background: rgb(95, 52, 196);
+    min-width: 100px;
+    max-width: 400px;
+    padding: 5px;
+    margin: 5ox 0 ;
+    border-radius: 30px;
+    color: white;
+    box-shadow: -1px 8px 20px 1px #5c23a7bb;
+    font-family: sans-serif;
+}
+
+.text__i img {
+    margin: 0px 0px 0px 20px;
+    width: 20px;
+}
+
+
+.text__i {
+    display: inline-block;
+    background: rgb(57, 31, 209);
+    min-width: 100px;
+    max-width: 400px;
+    padding: 5px;
+    border-radius: 30px;
+    border-radius: 30px;
+    color: white;
+    box-shadow: -1px 8px 20px 1px #5c23a7bb;
+    font-family: sans-serif;
+}
+
+.otpr {
+    width: 100%;
+    background: rgb(29, 28, 28);
+    height: 55px;
+    box-shadow: -1px 8px 20px 1px #5c23a7bb;
+    margin-top: 200px;
+}
+
+.inp__otpr {
+    max-width: 700px;
+    border: none;
+    background: rgb(29, 28, 28);
+    height: 30px;
+    color: white;
+}
+
+
+
+.footer {
+    background: rgba(0, 0, 0, 0.445);
+    height: 100px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    align-items: center;
+    padding: 15px;
+}
+
+
+@media screen and (max-width: 1771px) {
+    .right {
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1515px) {
+    .right {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .right {
+        width: 500px; 
+    }
+}
+
+@media screen and (max-width: 1038px) {
+    .right {
+        width: 350px; 
+    }
+}
+
+@media screen and (max-width: 871px) {
+    .right {
+        width: 350px; 
+    }
+    .center {
+       width: 200px;
+    }
+
+    .chat-1 {
+        width: 100px;
+        height: 30px;
+    }
+
+    .poisc {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 700px) { 
+    .right {
+        width: 300px; 
+    }
+
+    .center {
+        width: 150px;
+     }
+
+     .poisc {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 815px) {
+    .menu__header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .header__container {
+        display: flex;
+        justify-content: center;
+        gap: 150px;
+        align-items: center;
+        margin: 0 50px;
+    }
+    .footer {
+        background: rgba(0, 0, 0, 0.445);
+        height: 100%;
+    }
+
+    
+    
+    
+}
+
+
+@media screen and (max-width: 553px) {
+    .nav__header {
+        display: none;
+    }
+
+    .nav__bg {
+        display: flex;
+    }
+
+    .header__container {
+        gap: 50px;
+        align-items: center;
+        margin: 0 50px;
+    }
+    
+}
+
+
+@media screen and (max-width: 488px) {
+    .left {
+        width: 400px;
+    }
+
+    .right {
+        width: 200px;
+       
+    }
+
+    .text__i {
+        white-space: wrap;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 434px) {
+    .left {
+        width: 300px;
+    }
+    .right {
+        width: 150px;
+    }
+
+    .inp__otpr {
+        max-width: 100px;
+    }
+}
