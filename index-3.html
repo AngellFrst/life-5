@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <link rel="stylesheet" href="css/style-3.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="index.html"><img src="img/logo.svg" alt=""></a>
+            </div>
+            <nav class="nav__header">
+                <ul class="menu__header">
+                    <li class="heder__li"><a class="link__header" href="index.html">Главная</a></li>
+                    <li class="heder__li"><a class="link__header" href="index-2.html">Месенджер</a></li>
+                    <li class="heder__li"><a class="link__header" href="index-3.html">Профиль</a></li>
+                    <li class="heder__li"><a class="link__header" href="index-4.html">Блог</a></li>
+                    <li class="heder__li"><a class="link__header" href="index-5.html">О нас</a></li>
+                </ul>
+            </nav>
+
+            <nav class="nav__bg">
+                <ul class="menu__ul">
+                    <li class="dropdown">
+                        <a class="link__header" href="#">Меню</a>
+                        <ul class="submenu">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="index-2.html">Месенджер</a></li>
+                            <li><a href="index-3.html">Профиль</a></li>
+                            <li><a href="index-4.html">Блог</a></li>
+                            <li><a href="index-5.html">О нас</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="intro" style="background-image: url('img/bgprof.jpg');">
+            <div class="intro__profil">
+                <div class="prof">
+                    <div class="foto__all">
+                        <div class="foto__text">
+                            <div class="foto">
+                                <img src="img/avatar.png" alt="">
+                            </div>
+                            <div class="text__prof">
+                                <input type="text" placeholder="Фамилия" class="ipt__prof">
+                                <input type="text" placeholder="Имя" class="ipt__prof">
+                                <input type="text" placeholder="Отчество" class="ipt__prof">
+                            </div>
+                        </div>
+                        <div class="plitka-foto">
+                            <div class="foto__prof">
+                                <img src="img/foto1.png" alt="" class="foto__table">
+                                <img src="img/foto1.png" alt="" class="foto__table">
+                                <img src="img/foto1.png" alt="" class="foto__table">
+                            </div>
+                        </div>
+                        <button class="btn__prof"><a class="link__prof" href="index.html">Выйти</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="s2">
+            <div class="post__setting">
+               
+                <div class="post">
+                    <div class="post__block">
+                        <div class="block-1">
+
+                            <div class="inf__text">
+                                <p class="title__inf">Истории с дальних краев: путешествие по Азии</p>
+                                <p class="histori">В этом посте я поделюсь своими приключениями во время путешествия по
+                                    разным странам Азии. Расскажу о красотах природы, вкусной местной кухне и
+                                    незабываемых встречах с местными жителями.</p>
+                            </div>
+                            <img class="img__info" src="img/info1.jpg" alt="">
+
+                        </div>
+                        <div class="block-2">
+                            <div class="inf__text-2">
+                                <p class="title__inf">Эффективные стратегии для повышения продуктивности на работе</p>
+                                <p class="histori">В моем блоге я делюсь проверенными методиками и лайфхаками, которые
+                                    помогают мне быть более продуктивным в рабочем процессе. От управления временем до
+                                    методов улучшения концентрации - здесь вы найдете полезные советы для эффективной
+                                    работы.</p>
+                            </div>
+                        </div>
+                        <div class="block-3">
+                            <div class="block-3__pad">
+                                <img class="img__info" src="img/info2.jpg" alt="">
+                                <div class="inf__text">
+                                    <p class="title__inf">Вкусные и здоровые рецепты на каждый день</p>
+                                    <p class="histori">Мой блог посвящен кулинарным экспериментам и созданию вкусных блюд из доступных продуктов. Здесь вы найдете рецепты с подробными инструкциями, советы по здоровому питанию и идеи для разнообразия в повседневном меню.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="setting-bac">
+                        <p class="title__set">Настройки<span id="dots"></span></p>
+                        <div id="more">
+                            <div class="more__flx">
+                                <p class="text__more">Уровень
+                                    приватности</p>
+                                <select class="select">
+                                    <option class="opt" value="1">Открытй профиль</option>
+                                    <option class="opt" value="2">Закрытый</option>
+                                    <option class="opt" value="3">Скрытый</option>
+                                </select>
+                                <button class="btn__white">Сменить дизайн</button>
+                                <p class="team">Клавиша "t" - светлая тема <br> Клавиша "d" - темная тема</p>
+
+                                <p class="black__spis">Черный список</p>
+                                <p class="black__text">Введите номер телефона или ник пользователя</p>
+                                <input type="text" placeholder="Пишите" class="inp__black">
+                                <button class="btn__black">Добавить пользоватля в черный список</button>
+                            </div>
+                        </div>
+                        <button id="btn" onclick="readMore()">Открыть</button>
+                    </div>
+                </div>
+               
+
+            </div>
+        </section>
+
+
+
+
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="header__logo">
+                    <a href="index.html"><img src="img/logo.svg" alt=""></a>
+                </div>
+                <nav class="nav__header">
+                    <ul class="menu__header">
+                        <li class="heder__li"><a class="link__header" href="index.html">Главная</a></li>
+                        <li class="heder__li"><a class="link__header" href="index-2.html">Месенджер</a></li>
+                        <li class="heder__li"><a class="link__header" href="index-3.html">Профиль</a></li>
+                        <li class="heder__li"><a class="link__header" href="index-4.html">Блог</a></li>
+                        <li class="heder__li"><a class="link__header" href="index-5.html">О нас</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="nav__bg">
+                    <ul class="menu__ul">
+                        <li class="dropdown">
+                            <a class="link__header" href="#">Меню</a>
+                            <ul class="submenu">
+                                <li><a href="index.html">Главная</a></li>
+                            <li><a href="index-2.html">Месенджер</a></li>
+                            <li><a href="index-3.html">Профиль</a></li>
+                            <li><a href="index-4.html">Блог</a></li>
+                            <li><a href="index-5.html">О нас</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+
+        <script src="sett.js">
+
+        </script>
+
+</body>
+
+</html>

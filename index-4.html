@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="css/style-4.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="index.html"><img src="img/logo.svg" alt=""></a>
+            </div>
+            <nav class="nav__header">
+                <ul class="menu__header">
+                    <li class="heder__li"><a class="link__header" href="index.html">Главная</a></li>
+                    <li class="heder__li"><a class="link__header" href="index-2.html">Месенджер</a></li>
+                    <li class="heder__li"><a class="link__header" href="index-3.html">Профиль</a></li>
+                    <li class="heder__li"><a class="link__header" href="index-4.html">Блог</a></li>
+                    <li class="heder__li"><a class="link__header" href="index-5.html">О нас</a></li>
+                </ul>
+            </nav>
+
+            <nav class="nav__bg">
+                <ul class="menu__ul">
+                    <li class="dropdown">
+                        <a class="link__header" href="#">Меню</a>
+                        <ul class="submenu">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="index-2.html">Месенджер</a></li>
+                            <li><a href="index-3.html">Профиль</a></li>
+                            <li><a href="index-4.html">Блог</a></li>
+                            <li><a href="index-5.html">О нас</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="intro__block">
+                <h1 class="title__intro">Блог от Life 5+</h1>
+                <button class="btn__read"><a class="link__read" href="#readLif">Читать</a></button>
+            </div>
+        </section>
+
+        <section class="s1">
+            <h2 class="title__s1" id="readLif">Выберите тему</h2>
+            <div class="block__btn">
+                <button class="btn__team active" type="button" data-tab='#tab_1'>Здоровый образ жизни</button>
+                <button class="btn__team" type="button" data-tab='#tab_2'>Искусственный интеллект</button>
+                <button class="btn__team" type="button" data-tab='#tab_3'>Кибербезопасноть</button>
+            </div>
+        </section>
+
+        <!-- первый таб с подробнее -->
+        <section class="s2 active" id="tab_1">
+
+            <div class="s2__block">
+                <div class="block__blog">
+                    <p class="title__s2">Здоровый образ жизни</p>
+                    <p class="podd__title">Польза зарядки утром</p>
+                    <p class="text__block">Утренняя зарядка – это прекрасный способ начать день с энергией и позитивом.
+                        Регулярные упражнения утром помогают улучшить общее самочувствие, повысить работоспособность и
+                        поддерживать тонус мышц <span id="dots">...</span>
+                        <span id="more">
+                            На фоне современного образа жизни, когда большинство времени проводится
+                            в статическом положении за компьютером, зарядка становится необходимостью. Начните свой день
+                            с
+                            небольших физических упражнений, чтобы поддерживать свое здоровье и бодрость на протяжении
+                            всего
+                            дня.
+                            <img src="img/blog1.jpg" alt="" class="img__blog">
+                        </span>
+
+                    </p>
+                    <button id="btn__dalee" onclick="readMore()">Подробнее</button>
+                    <div class="komm">
+
+                        <input type="text" class="inp__comm" placeholder="Оставить комментарий">
+                        <img src="img/like-2.png" alt="" onclick="like()" id="like">
+                        <img src="img/podel.png" alt="" class="podel">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="s2__block">
+                <div class="block__blog">
+                    <p class="title__s2">Здоровый образ жизни</p>
+                    <p class="podd__title">Рациональное питание для поддержания формы</p>
+                    <p class="text__block">Правильное питание – основа здорового образа жизни. Организм нуждается в
+                        балансе белков, жиров, углеводов, витаминов и минералов для поддержания функций органов и
+                        систем. Рациональное питание способствует не только поддержанию формы, но <span
+                            id="dots_2">...</span> <span id="more_2">
+                            Правильное питание – основа здорового образа жизни. Организм нуждается в балансе белков,
+                            жиров, углеводов, витаминов и минералов для поддержания функций органов и систем.
+                            Рациональное питание способствует не только поддержанию формы, но
+                            <img src="img/blog2.jpg" alt="" class="img__blog">
+                        </span> </p>
+
+                    <button id="btn__dalee_2" onclick="readMoreTwo()">Подробнее</button>
+                    <div class="komm">
+                        <input type="text" class="inp__comm" placeholder="Оставить комментарий">
+                        <img src="img/like-2.png" alt="" onclick="like2()" id="like2">
+                        <img src="img/podel.png" alt="" class="podel">
+                    </div>
+                </div>
+            </div>
+
+            <div class="s2__block">
+                <div class="blogThree">
+                    <p class="title__s2">Здоровый образ жизни</p>
+                    <p class="podd__title">Закалка и ее роль в здоровом образе жизни</p>
+                    <p class="text__block">Закалка - это метод, основанный на постепенном приспособлении организма к
+                        неблагоприятным условиям с целью укрепления иммунной системы и повышения общего тонуса
+                        организма. В блоге можно рассмотреть различные аспекты закалки, такие как:<span
+                            id="dots_3">...</span>
+                    <ol id="more_3">
+                        <li>Закаливание душем. Начните утро с теплого душа, затем постепенно увеличивайте время под
+                            холодной водой. Начните с нескольких секунд, постепенно увеличивая до 1-2 минут. Этот метод
+                            закаливания помогает укрепить иммунную систему и улучшить кровообращение.</li>
+
+                        <li>Гуляйте на свежем воздухе. Регулярные прогулки на свежем воздухе, особенно в парках или
+                            лесах, помогают организму привыкнуть к различным погодным условиям и укрепляют нервную
+                            систему.
+
+                        </li>
+
+                        <li>Плавание в холодной воде. Если есть возможность, попробуйте заниматься плаванием в открытых
+                            водоемах в периоды прохладной или холодной погоды. Это отличный способ закаливания всего
+                            организма и повышения его устойчивости к низким температурам.</li>
+
+                        <li>Контрастные души. Попробуйте принимать контрастные души, чередуя теплую и холодную воду. Это
+                            способствует улучшению кровообращения, укрепляет сосуды и дает заряд бодрости.</li>
+                        <li>Закаливание воздухом. Выходите на балкон или во двор на несколько минут каждый день, даже в
+                            прохладную погоду. Глубокие вдохи свежего воздуха помогут укрепить легкие и насытить
+                            организм кислородом.</li>
+                        <img src="img/blog3.jpg" alt="" class="img__blog">
+                    </ol>
+                    </p>
+
+                    <button id="btn__dalee_3" onclick="readMoreThree()">Подробнее</button>
+                    <div class="komm">
+                        <input type="text" class="inp__comm" placeholder="Оставить комментарий">
+                        <img src="img/like-2.png" alt="" onclick="like3()" id="like3">
+                        <img src="img/podel.png" alt="" class="podel">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- первый таб с подробнее -->
+
+        <!-- второй таб с подробнее -->
+
+        <section class="s2" id="tab_2">
+
+            <div class="s2__block">
+                <div class="block__blog">
+                    <p class="title__s2">Искусственный интеллект</p>
+                    <p class="podd__title">Искусственный интеллект в медицине: преимущества и вызовы</p>
+                    <p class="text__block">В современной медицине искусственный интеллект (ИИ) играет ключевую роль,
+                        привнося множество преимуществ и вызовов. Одним из основных достижений ИИ является автоматизация
+                        диагностики с использованием машинного обучения. <span id="dots_2_1">...</span>
+                        <span id="more_2_1">
+                            Это позволяет улучшить точность определения заболеваний и сократить время на обработку
+                            медицинских данных. Однако, помимо технических аспектов, стоит учитывать этические вопросы,
+                            такие как конфиденциальность данных пациентов и ответственность за принимаемые решения.
+                            Исследования в области медицинского ИИ продолжаются, и в будущем мы можем ожидать еще более
+                            значительных изменений в медицинской практике благодаря этой технологии.
+                            <img src="img/blog4.jpg" alt="" class="img__blog">
+                        </span>
+                    </p>
+                    <button id="btn__dalee_2_1" onclick="readMore_2_1()">Подробнее</button>
+                    <div class="komm">
+                        <input type="text" class="inp__comm" placeholder="Оставить комментарий">
+                        <img src="img/like-2.png" alt="" onclick="like4()" id="like4">
+                        <img src="img/podel.png" alt="" class="podel">
+                    </div>
+                </div>
+            </div>
+
+            <div class="s2__block">
+                <div class="block__blog">
+                    <p class="title__s2">Искусственный интеллект</p>
+                    <p class="podd__title">Будущее транспорта: как искусственный интеллект меняет автомобильную отрасль
+                    </p>
+                    <p class="text__block">Автомобильная промышленность переживает значительные изменения под влиянием
+                        искусственного интеллекта (ИИ). Одним из самых ярких примеров являются автономные транспортные
+                        средства (АТС)<span id="dots_2_2">...</span> <span id="more_2_2">
+                            которые могут существенно улучшить безопасность дорожного движения и эффективность
+                            транспортных сетей. Использование ИИ также позволяет создавать умные системы навигации,
+                            оптимизировать маршруты и управлять потоками транспорта в режиме реального времени. Однако,
+                            внедрение таких технологий также влечет за собой вопросы безопасности и приватности данных,
+                            которые требуют серьезного внимания и разработки соответствующих нормативов.
+                            <img src="img/blog5.png" alt="" class="img__blog">
+                        </span> </p>
+
+                    <button id="btn__dalee_2_2" onclick="readMore_2_2()">Подробнее</button>
+                    <div class="komm">
+                        <input type="text" class="inp__comm" placeholder="Оставить комментарий">
+                        <img src="img/like-2.png" alt="" onclick="like5()" id="like5">
+                        <img src="img/podel.png" alt="" class="podel">
+                    </div>
+                </div>
+            </div>
+
+            <div class="s2__block">
+                <div class="blogThree">
+                    <p class="title__s2">Искусственный интеллект</p>
+                    <p class="podd__title">Искусственный интеллект в образовании: новые возможности для учебного
+                        процесса</p>
+                    <p class="text__block">Развитие искусственного интеллекта (ИИ) открывает новые горизонты в
+                        образовании. Умные образовательные платформы и алгоритмы адаптивного обучения позволяют
+                        персонализировать образовательный процесс под каждого студента, учитывая его индивидуальные
+                        потребности и уровень знаний<span id="dots_2_3">...</span>
+                        <span id="more_2_3">
+                            Использование ИИ также способствует автоматизации рутинных задач преподавателей, что
+                            освобождает время для более качественного взаимодействия с учащимися. Однако, внедрение ИИ в
+                            образование также требует подготовки учителей и разработки этических стандартов, чтобы
+                            обеспечить эффективное и безопасное использование этой технологии в учебных заведениях.
+                            <img src="img/blog6.jpg" alt="" class="img__blog">
+                        </span>
+                    </p>
+
+                    <button id="btn__dalee_2_3" onclick="readMore_2_3()">Подробнее</button>
+                    <div class="komm">
+                        <input type="text" class="inp__comm" placeholder="Оставить комментарий">
+                        <img src="img/like-2.png" alt="" onclick="like6()" id="like6">
+                        <img src="img/podel.png" alt="" class="podel">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- второй таб с подробнее -->
+
+
+
+        <section class="s2" id="tab_3">
+
+            <div class="s2__block">
+                <div class="block__blog">
+                    <p class="title__s2">Кибербезопасноть</p>
+                    <p class="podd__title">Основы кибербезопасности: защита в онлайн-мире</p>
+                    <p class="text__block">В современном мире, насыщенном цифровыми технологиями, кибербезопасность
+                        играет важную роль в защите данных и личной информации. Основы кибербезопасности включают
+                        использование сильных и уникальных паролей для каждого аккаунта, регулярное обновление
+                        программного обеспечения и антивирусных программ, а также обучение пользователям основам
+                        безопасного поведения в сети<span id="dots_3_1">...</span>
+                        <span id="more_3_1">
+                            Важно также следить за подозрительной активностью на своих устройствах и сетях, реагировать
+                            на подозрительные запросы и сообщения, чтобы избежать попадания в сети киберпреступников.
+                            <img src="img/blog7.jpg" alt="" class="img__blog">
+                        </span>
+                    </p>
+                    <button id="btn__dalee_3_1" onclick="readMore_3_1()">Подробнее</button>
+                    <div class="komm">
+                        <input type="text" class="inp__comm" placeholder="Оставить комментарий">
+                        <img src="img/like-2.png" alt="" onclick="like7()" id="like7">
+                        <img src="img/podel.png" alt="" class="podel">
+                    </div>
+                </div>
+            </div>
+
+            <div class="s2__block">
+                <div class="block__blog">
+                    <p class="title__s2">Кибербезопасноть</p>
+                    <p class="podd__title">Тренды в кибербезопасности: вызовы и новые решения</p>
+                    <p class="text__block">Современные тренды в кибербезопасности отражают растущую сложность угроз и
+                        вызовы, с которыми сталкиваются организации и частные лица. Распространение облачных технологий
+                        и интернета вещей (IoT) увеличивает поверхность атак и требует более сложных решений в области
+                        безопасности <span id="dotsTreti">...</span> <span id="moreTreti">
+                            Технологии искусственного интеллекта и машинного обучения используются для обнаружения и
+                            предотвращения кибератак, а также для анализа больших объемов данных для выявления аномалий
+                            и угроз. Безопасность сегодня требует комплексного подхода, включающего в себя не только
+                            технические средства, но и обучение персонала и разработку стратегий реагирования на
+                            инциденты безопасности.
+                            <img src="img/blog8.jpg" alt="" class="img__blog">
+                        </span> </p>
+
+                    <button id="btn__daleeTreti" onclick="readMoreTreti()">Подробнее</button>
+                    <div class="komm">
+                        <input type="text" class="inp__comm" placeholder="Оставить комментарий">
+                        <img src="img/like-2.png" alt="" onclick="like8()" id="like8">
+                        <img src="img/podel.png" alt="" class="podel">
+                    </div>
+                </div>
+            </div>
+
+            <div class="s2__block">
+                <div class="blogThree">
+                    <p class="title__s2">Кибербезопасноть</p>
+                    <p class="podd__title">Кибербезопасность в бизнесе: защита данных и стратегии безопасности</p>
+                    <p class="text__block">Для бизнеса кибербезопасность становится важным элементом защиты
+                        корпоративных данных, интеллектуальной собственности и операционной деятельности. Реализация
+                        эффективных стратегий кибербезопасности включает в себя оценку рисков<span
+                            id="dotsPosled">...</span>
+                        <span id="morePosled">
+                            разработку политики безопасности, использование многофакторной аутентификации, шифрование
+                            данных, мониторинг сетевой активности и обучение персонала правилам безопасности.
+                            Безопасность важна не только для предотвращения угроз, но и для поддержания доверия клиентов
+                            и партнеров к бизнесу, что является ключевым аспектом успешной деятельности в цифровой
+                            среде.
+                            <img src="img/blog9.jpg" alt="" class="img__blog">
+                        </span>
+                    </p>
+
+                    <button id="btn__daleePosled" onclick="readMorePosled()">Подробнее</button>
+                    <div class="komm">
+                        <input type="text" class="inp__comm" placeholder="Оставить комментарий">
+                        <img src="img/like-2.png" alt="" onclick="like9()" id="like9">
+                        <img src="img/podel.png" alt="" class="podel">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="header__logo">
+                <a href="index.html"><img src="img/logo.svg" alt=""></a>
+            </div>
+            <nav class="nav__header">
+                <ul class="menu__header">
+                    <li class="heder__li"><a class="link__header" href="index.html">Главная</a></li>
+                    <li class="heder__li"><a class="link__header" href="index-2.html">Месенджер</a></li>
+                    <li class="heder__li"><a class="link__header" href="index-3.html">Профиль</a></li>
+                    <li class="heder__li"><a class="link__header" href="index-4.html">Блог</a></li>
+                    <li class="heder__li"><a class="link__header" href="index-5.html">О нас</a></li>
+                </ul>
+            </nav>
+
+            <!-- <nav class="nav__bg">
+                <ul class="menu__ul">
+                    <li class="dropdown">
+                        <a class="link__header" href="#">Меню</a>
+                        <ul class="submenu">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="index-2.html">Месенджер</a></li>
+                            <li><a href="index-3.html">Профиль</a></li>
+                            <li><a href="index-4.html">Блог</a></li>
+                            <li><a href="#">О нас</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav> -->
+        </div>
+    </footer>
+
+
+
+    <script src="app-4.js"></script>
+</body>
+
+</html>
